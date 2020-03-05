@@ -1,0 +1,9 @@
+---
+applications:
+- name: ralph-concepts 
+  buildpacks:
+    - staticfile_buildpack
+  memory: 128M
+  disk_quota: 256M
+  instances: 1
+

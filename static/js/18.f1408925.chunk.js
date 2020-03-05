@@ -1,0 +1,2 @@
+(this.webpackJsonpralph=this.webpackJsonpralph||[]).push([[18],{457:function(e,t,a){"use strict";a.r(t);var r=a(0),n=a.n(r),s=a(10),c=a(55),l=a(304);t.default=()=>{const e=Object(c.a)().orgDetails;return n.a.createElement("div",null,n.a.createElement(s.b,{render:t=>n.a.createElement(l.default,Object.assign({orgId:e.id},t))}))}}}]);
+//# sourceMappingURL=18.f1408925.chunk.js.map
