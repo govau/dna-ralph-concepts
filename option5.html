@@ -66,6 +66,9 @@ svg {
     text-decoration: underline;
     background-color: #343d4c;
 }
+#footer-nav a {
+    padding: 0 5px;
+}
 </style>
 </head>
 
@@ -75,7 +78,7 @@ svg {
             <nav class="dashboard-header">
                 <div class="container">
                     <div class="col-md-6 dashboard-header__contents">
-                        <a class="au-header__brand dashboard-header__link" href="option5.html">
+                        <a class="au-header__brand dashboard-header__link" href="menus.html">
                             <img src="./static/australian-government-white.png" alt="Australian Government" class="au-header__brand-image" style="min-height: 64px;">
                             <h1 class="heading au-header__text">Project Ralph</h1>
                         </a>
@@ -103,8 +106,17 @@ svg {
             </nav>
             <nav class="au-main-nav  au-main-nav--dark dashboard-main-nav" aria-label="main" style="padding-bottom: 10px">
                 <div class="container">
-                    <div class="row">
-                        
+                    <div class="row" style="margin-top:2em;">
+                        <div class="col-md-12 au-main-nav__content">
+                            <div class="au-main-nav__menu">
+                                <div class="au-main-nav__menu-inner">
+                                    <ul class="au-link-list" style="margin-bottom: 3px;">
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Help</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -225,8 +237,19 @@ svg {
             </div>
             <footer class="au-footer footer au-footer--dark " style="margin-top: 5em;" role="contentinfo">
                 <div class="container">
-                    <nav class="au-footer__navigation " aria-label="footer">
-                        <div></div>
+                    <nav class="au-footer__navigation au-body au-body--dark" aria-label="footer">
+                        <div>
+                            <ul class="au-link-list au-link-list--inline" id="footer-nav">
+                                <li><a aria-current="page" href="#">Home</a></li>
+                                <li><a href="#">Guidelines</a></li>
+                                <li><a href="#">Policies</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">WHOIS Lookup</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                            </ul>
+                        </div>
                     </nav>
                 </div>
             </footer>
