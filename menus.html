@@ -47,7 +47,7 @@ ul.au-link-list li {
     margin-left: 0;
 }
 ul.au-link-list li.active > a {
-    font-weight: bold !important;
+    font-weight: bold;
 }
 ul.au-link-list ul.au-link-list {
     margin-left: 0.5em;
@@ -80,6 +80,53 @@ svg {
     text-decoration: underline;
     background-color: #343d4c;
 }
+
+
+#option2 ul.au-link-list > li {
+    margin: 0 !important;
+}
+#option2 ul.au-link-list li a {
+    padding: 5px 1em;
+    display: block;
+    border-left: 3px solid #eee;
+}
+#option2 > div > ul.au-link-list > li.active > a {
+    border-left: 3px solid #61daff;
+    font-weight: bold;
+}
+#option2 > div > ul.au-link-list ul.au-link-list a {
+    border-left: 3px solid #61daff;
+    padding-left: 2em;
+}
+#option2 ul.au-link-list ul.au-link-list {
+    border-left: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#option3 ul.au-link-list > li {
+    margin: 0 !important;
+}
+#option3 ul.au-link-list li a {
+    padding: 5px 1em;
+    display: block;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #fff;
+}
+#option3 > div > ul.au-link-list > li.active > a {
+    font-weight: bold;
+    background-color: #fff;
+}
+#option3 > div > ul.au-link-list ul.au-link-list a {
+    padding-left: 2em;
+    background-color: #fff;
+}
+#option3 ul.au-link-list ul.au-link-list {
+    border-left: none;
+    padding: 0;
+    margin: 0;
+}
 </style>
 </head>
 
@@ -104,7 +151,141 @@ svg {
                 </div>
             </nav>
             <div class="container" style="margin-top: 2em;">
-                <div class="row">
+                <div class="row" style="margin-bottom: 10em;">
+                    <div class="col-md-3">
+                        <ul class="au-link-list">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Profile</a></li>
+                            <li><a href="#">My Organisation</a></li>
+                        </ul>
+
+                        <h2 class="au-sidenav__title" style="font-size:1em">Zone Administration</h2>
+                        <ul class="au-link-list">
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Organisations</a></li>
+                            <li><a href="#">Domains</a></li>
+                            <li><a href="#">Zones</a></li>
+                            <li><a href="#">Transactions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="au-link-list">
+                            <li><a href="#">Dashboard</a></li>
+                            <li class="active"><a href="#">My Profile</a>
+                                <ul class="au-link-list">
+                                    <li><a href="#">Edit Profile</a></li>
+                                    <li><a href="#">Edit <acronym title="Multi-Factor Authentication">MFA</acronym></a></li>
+                                    <li><a href="#">Edit Login</a></li>
+                                    <li><a href="#">Profile History</a></li>
+                                    <li><a href="#">Transaction Log</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">My Organisation</a></li>
+                        </ul>
+
+                        <h2 class="au-sidenav__title" style="font-size:1em">Zone Administration</h2>
+                        <ul class="au-link-list">
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Organisations</a></li>
+                            <li><a href="#">Domains</a></li>
+                            <li><a href="#">Zones</a></li>
+                            <li><a href="#">Transactions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="au-link-list">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Profile</a></li>
+                            <li class="active"><a href="#">My Organisation</a>
+                                <ul class="au-link-list">
+                                    <li><a href="#">Edit Organisation</a></li>
+                                    <li><a href="#">Manage Users</a></li>
+                                    <li><a href="#">Organisation History</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2 class="au-sidenav__title" style="font-size:1em">Zone Administration</h2>
+                        <ul class="au-link-list">
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Organisations</a></li>
+                            <li><a href="#">Domains</a></li>
+                            <li><a href="#">Zones</a></li>
+                            <li><a href="#">Transactions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div id="option2" class="row" style="margin-bottom: 10em;">
+                    <div class="col-md-3">
+                        <ul class="au-link-list">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Profile</a></li>
+                            <li><a href="#">My Organisation</a></li>
+                        </ul>
+
+                        <h2 class="au-sidenav__title" style="font-size:1em">Zone Administration</h2>
+                        <ul class="au-link-list">
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Organisations</a></li>
+                            <li><a href="#">Domains</a></li>
+                            <li><a href="#">Zones</a></li>
+                            <li><a href="#">Transactions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="au-link-list">
+                            <li><a href="#">Dashboard</a></li>
+                            <li class="active"><a href="#">My Profile</a>
+                                <ul class="au-link-list">
+                                    <li><a href="#">Edit Profile</a></li>
+                                    <li><a href="#">Edit <acronym title="Multi-Factor Authentication">MFA</acronym></a></li>
+                                    <li><a href="#">Edit Login</a></li>
+                                    <li><a href="#">Profile History</a></li>
+                                    <li><a href="#">Transaction Log</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">My Organisation</a></li>
+                        </ul>
+
+                        <h2 class="au-sidenav__title" style="font-size:1em">Zone Administration</h2>
+                        <ul class="au-link-list">
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Organisations</a></li>
+                            <li><a href="#">Domains</a></li>
+                            <li><a href="#">Zones</a></li>
+                            <li><a href="#">Transactions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="au-link-list">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My Profile</a></li>
+                            <li class="active"><a href="#">My Organisation</a>
+                                <ul class="au-link-list">
+                                    <li><a href="#">Edit Organisation</a></li>
+                                    <li><a href="#">Manage Users</a></li>
+                                    <li><a href="#">Organisation History</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h2 class="au-sidenav__title" style="font-size:1em">Zone Administration</h2>
+                        <ul class="au-link-list">
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Organisations</a></li>
+                            <li><a href="#">Domains</a></li>
+                            <li><a href="#">Zones</a></li>
+                            <li><a href="#">Transactions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div id="option3" class="row" style="margin-bottom: 10em;">
                     <div class="col-md-3">
                         <ul class="au-link-list">
                             <li><a href="#">Dashboard</a></li>

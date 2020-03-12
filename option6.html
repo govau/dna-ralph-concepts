@@ -60,17 +60,29 @@ svg {
     font-weight: normal;
 }
 #toolbar {
-    color: #fff;
+    color: #eee;
+    background-color: #000;
 }
 #toolbar a {
-    color: #61daff; 
+    color: #eee; 
     text-decoration: none;
-    padding: 0.75em 0.25em;
+    padding: 10px 0.5em;
+    font-size: 0.85em;
 }
 #toolbar a:hover {
     color: #fff;
     text-decoration: underline;
     background-color: #343d4c;
+}
+#toolbar ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+#toolbar ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
 }
 #footer-nav a {
     padding: 0 5px;
@@ -78,37 +90,46 @@ svg {
 </style>
 </head>
 
-<body cz-shortcut-listen="true"><noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root">
-        <div class="au-grid au-body site-container">
-            <nav class="dashboard-header">
-                <div class="container">
-                    <div class="col-md-6 dashboard-header__contents">
-                        <a class="au-header__brand dashboard-header__link" href="option6.html">
-                            <img src="./static/australian-government-white.png" alt="Australian Government" class="au-header__brand-image" style="min-height: 64px;">
-                            <h1 class="heading au-header__text">Project Ralph</h1>
-                        </a>
-                    </div>
-                    <div class="col-md-6" style="text-align: right;">
-                        <div id="toolbar">
-                            <a href="#" style="margin-right: 1em;">Contact Us</a>
-                            <a href="#" style="margin-right: 1em;">Help</a>
-                            <a href="#">
+<body cz-shortcut-listen="true" class="au-grid au-body"><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="toolbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">
                             <svg class="bi bi-person" width="32px" height="32px" viewBox="0 0 20 20" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle">
                                 <path fill-rule="evenodd" d="M15 16s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002zM5.022 15h9.956a.274.274 0 00.014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C13.516 12.68 12.289 12 10 12c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 00.022.004zm9.974.056v-.002zM10 9a2 2 0 100-4 2 2 0 000 4zm3-2a3 3 0 11-6 0 3 3 0 016 0z" clip-rule="evenodd"/>
                             </svg> 
                             John Denver    
-                            </a>
-                            
-                            <a href="#">
+                            </a></li>
+                        <li><a href="#">
                             <svg class="bi bi-box-arrow-right" width="32px" height="32px" viewBox="0 0 20 20" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
                                 <title>Log Out</title>
                                 <path fill-rule="evenodd" d="M13.646 13.354a.5.5 0 010-.708L16.293 10l-2.647-2.646a.5.5 0 01.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708 0z" clip-rule="evenodd"/>
                                 <path fill-rule="evenodd" d="M6.5 10a.5.5 0 01.5-.5h9a.5.5 0 010 1H7a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
                                 <path fill-rule="evenodd" d="M4 15.5A1.5 1.5 0 012.5 14V6A1.5 1.5 0 014 4.5h7A1.5 1.5 0 0112.5 6v1.5a.5.5 0 01-1 0V6a.5.5 0 00-.5-.5H4a.5.5 0 00-.5.5v8a.5.5 0 00.5.5h7a.5.5 0 00.5-.5v-1.5a.5.5 0 011 0V14a1.5 1.5 0 01-1.5 1.5H4z" clip-rule="evenodd"/>
                             </svg>
-                            </a>
-                        </div>
+                            </a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div id="root">
+        <div class="au-grid au-body site-container">
+            <nav class="dashboard-header">
+                <div class="container">
+                    <div class="col-md-6 dashboard-header__contents">
+                        <a class="au-header__brand dashboard-header__link" href="menus.html">
+                            <img src="./static/australian-government-white.png" alt="Australian Government" class="au-header__brand-image" style="min-height: 64px;">
+                            <h1 class="heading au-header__text">Project Ralph</h1>
+                        </a>
+                    </div>
+                    <div class="col-md-6" style="text-align: right;">
+                        
                     </div>
                 </div>
             </nav>
