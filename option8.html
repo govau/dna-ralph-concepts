@@ -46,20 +46,13 @@
 ul.au-link-list li {
     margin-left: 0;
 }
-ul.au-link-list li.active > a {
-    font-weight: bold !important;
-}
-ul.au-link-list ul.au-link-list {
-    margin-left: 0.5em;
-    padding-left: 1em;
-    border-left: 1px dotted #aaa;
-}
 ul.au-link-list a {
     text-decoration: none !important;
 }
 ul.au-link-list a:hover {
     text-decoration: underline !important;
-}svg {
+}
+svg {
     vertical-align: middle;
 }
 .au-body .dashboard h2 {
@@ -82,27 +75,6 @@ ul.au-link-list a:hover {
 #footer-nav a {
     padding: 0 5px;
 }
-.au-breadcrumbs {
-    margin-bottom: 1em;
-}
-.au-breadcrumbs > .au-link-list > li {
-    margin: 0;
-}
-.au-breadcrumbs > .au-link-list > li:after {
-    content: ' ';
-    display: inline-block;
-    width: 0.5em;
-    height: 0.5em;
-    margin: 0 0.5em;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 128 128'%3E%3Cpath fill='gray' d='M128 64l-64 64-16-16 64-64'/%3E%3Cpath fill='gray' d='M128 64l-16 16-64-64L64 0'/%3E%3C/svg%3E");
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.au-breadcrumbs > .au-link-list > li:last-child:after {
-    display: none;
-}
-
 .last-login {
     color: #ddd;
     font-size: 0.9em;
@@ -117,7 +89,7 @@ ul.au-link-list a:hover {
             <nav class="dashboard-header">
                 <div class="container">
                     <div class="col-md-6 dashboard-header__contents">
-                        <a class="au-header__brand dashboard-header__link" href="index.html">
+                        <a class="au-header__brand dashboard-header__link" href="menus.html">
                             <img src="./static/australian-government-white.png" alt="Australian Government" class="au-header__brand-image" style="min-height: 64px;">
                             <h1 class="heading au-header__text">Project Ralph</h1>
                         </a>
@@ -148,21 +120,29 @@ ul.au-link-list a:hover {
             </nav>
             <nav class="au-main-nav  au-main-nav--dark dashboard-main-nav" aria-label="main" style="padding-bottom: 10px">
                 <div class="container">
+                    
                 </div>
             </nav>
+            <div style="background-color: #efefef;">
+                <div class="container" style="margin-top: 2em; margin-bottom: 2em;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div><span class="">Organisation: </span><select class="au-select organisation-select">
+                                <option value="efc5d22b-3eef-4399-b21e-09e369e8d354" selected="">Chief Minister, Treasury and Economic Development Directorate - Zone Admin</option>
+                                <option>Health Directorate - User</option>
+                                <option>Transport Canberra and City Services - Org Admin</option>
+                            </select></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row" style="margin-top: 2em;">
                     <div class="col-md-3">
-                        <ul class="au-link-list">
-                            <li><a href="#">Dashboard</a></li>
+                        <ul class="au-link-list ">
+                            <li class="active"><a aria-current="page" class="active" href="#">Dashboard</a></li>
                             <li><a href="#">My Profile</a></li>
-                            <li class="active"><a href="#">My Organisation</a>
-                                <ul class="au-link-list">
-                                    <li><a href="#">Edit Organisation</a></li>
-                                    <li><a href="#">Manage Users</a></li>
-                                    <li class="active"><a href="#">Organisation History</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="#">My Organisation</a></li>
                         </ul>
 
                         <h2 class="au-sidenav__title" style="font-size:1em">Zone Administration</h2>
@@ -176,20 +156,83 @@ ul.au-link-list a:hover {
                     </div>
                     <div class="col-md-9">
                         <main class="dashboard">
-                            <nav class="au-breadcrumbs" aria-label="breadcrumb">
-                                <ul class="au-link-list au-link-list--inline">
-                                    <li><a href="#">Dashboard</a></li>
-                                    <li><a href="#">My Organisation</a></li>
-                                    <li><a href="#">Organisation History</a></li>
-                                    <li>Revision 1</li>
-                                </ul>
-                            </nav>
+                            <h1 class="au-display-xl heading">Chief Minister, Treasury and Economic Development Directorate</h1>
 
-                            <h1 class="au-display-xl heading">Organisation History</h1>
-                            <h2>Revision 1</h2>
+                            <h2>Pending activities</h2>
+                            <div class="table">
+                                <div class="table__responsive-wrapper">
+                                    <table class="table__au-table au-table au-table--striped">
+                                        <thead class="au-table__head ">
+                                            <tr class="au-table__row undefined">
+                                                <th class="au-table__header undefined   "> Domain Name </th>
+                                                <th class="au-table__header undefined   "> Type</th>
+                                                <th class="au-table__header undefined   " width="180"> Date Submitted </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="au-table__body  ">
+                                            <tr class="au-table__row undefined">
+                                                <td class="au-table__cell domain name-cell  "><a href="#">alpha.act.gov.au</a></td>
+                                                <td class="au-table__cell">New application</td>
+                                                <td class="au-table__cell view-cell  ">2020-01-14 09:34:20</td>
+                                            </tr>
+                                            <tr class="au-table__row undefined">
+                                                <td class="au-table__cell domain name-cell  "><a href="#">beta.act.gov.au</a></td>
+                                                <td class="au-table__cell">New application</td>
+                                                <td class="au-table__cell view-cell  ">2020-01-28 10:11:12</td>
+                                            </tr>
+                                            <tr class="au-table__row undefined">
+                                                <td class="au-table__cell domain name-cell  "><a href="#">campaign.act.gov.au 
+                                                    <svg class="bi bi-chevron-right" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg>
+                                                    ACT Department of Campaigns</a></td>
+                                                <td class="au-table__cell">Transfer</td>
+                                                <td class="au-table__cell view-cell  ">2020-02-02 13:14:15</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
 
-                            <div><div class="au-card    "><div class="au-card__inner "><p>Organisation has been created with: Organisation(name=Chief Minister, Treasury and Economic Development Directorate, canonicalName=chief minister, treasury and economic development directorate, registrantName=Chief Minister, Treasury and Economic Development Directorate, canonicalRegistrantName=chief minister, treasury and economic development directorate, registrantContactName=Peter Bridgfoot, registrantContactEmail=peter.bridgfoot@act.gov.au, ownerUserId=e437d613-d415-4ddc-bfda-89ab46330dbc, phone=+61.262050267, street1=Shared Services ICT, street2=GPO Box 158, street3=null, city=Australian Capital Territory, postcode=2601, state=Australian Capital Territory, countryCode=AU, type=ZONE_MANAGER, zones=[], managedZones=[1b5b6301-9c4c-4f9e-9e00-f6fe0c6125fd], organisationRoles=[OrganisationRole(userId=e437d613-d415-4ddc-bfda-89ab46330dbc, role=ZONE_MANAGER_ADMIN), OrganisationRole(userId=e437d613-d415-4ddc-bfda-89ab46330dbc, role=ORGANISATION_USER), OrganisationRole(userId=2bb98164-46f2-47a0-9ddd-853dbeef7eb3, role=ORGANISATION_USER), OrganisationRole(userId=e437d613-d415-4ddc-bfda-89ab46330dbc, role=ORGANISATION_ADMIN), OrganisationRole(userId=2bb98164-46f2-47a0-9ddd-853dbeef7eb3, role=ZONE_MANAGER_ADMIN)], contacts=[OrganisationContact(name=Peter Bridgfoot, email=peter.bridgfoot@act.gov.au, type=TECHNICAL), OrganisationContact(name=Peter Bridgfoot, email=peter.bridgfoot@act.gov.au, type=ADMINISTRATIVE)])</p></div></div></div>
-
+                            <h2>Domains</h2>
+                            <div class="table">
+                                <div class="table__responsive-wrapper">
+                                    <table class="table__au-table au-table au-table--striped">
+                                        <thead class="au-table__head ">
+                                            <tr class="au-table__row undefined">
+                                                <th class="au-table__header undefined   "> Domain Name </th>
+                                                <th class="au-table__header undefined   " width="180"> Created</th>
+                                                <th class="au-table__header undefined   " width="180"> Modified</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="au-table__body  ">
+                                            <tr class="au-table__row undefined" tabindex="0">
+                                                <td class="au-table__cell domain name-cell  "><a href="#">education.act.gov.au</a></td>
+                                                <td class="au-table__cell view-cell  ">2000-02-02 14:14:14</td>
+                                                <td class="au-table__cell view-cell  ">2000-02-02 14:14:14</td>
+                                            </tr>
+                                            <tr class="au-table__row undefined" tabindex="0">
+                                                <td class="au-table__cell domain name-cell  "><a href="#">environment.act.gov.au</a></td>
+                                                <td class="au-table__cell view-cell  ">2002-03-04 01:02:03</td>
+                                                <td class="au-table__cell view-cell  ">2014-09-28 12:54:21</td>
+                                            </tr>
+                                            <tr class="au-table__row undefined" tabindex="0">
+                                                <td class="au-table__cell domain name-cell  "><a href="#">health.act.gov.au</a>
+                                                    <svg class="bi bi-lock" width="20px" height="20px" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                        <title>Registry Locked</title>
+                                                        <path fill-rule="evenodd" d="M13.655 9H6.333c-.264 0-.398.068-.471.121a.73.73 0 00-.224.296 1.626 1.626 0 00-.138.59V15c0 .342.076.531.14.635.064.106.151.18.256.237a1.122 1.122 0 00.436.127l.013.001h7.322c.264 0 .398-.068.471-.121a.73.73 0 00.224-.296 1.627 1.627 0 00.138-.59V10c0-.342-.076-.531-.14-.635a.658.658 0 00-.255-.237 1.123 1.123 0 00-.45-.128zm.012-1H6.333C4.5 8 4.5 10 4.5 10v5c0 2 1.833 2 1.833 2h7.334c1.833 0 1.833-2 1.833-2v-5c0-2-1.833-2-1.833-2zM6.5 5a3.5 3.5 0 117 0v3h-1V5a2.5 2.5 0 00-5 0v3h-1V5z" clip-rule="evenodd"/>
+                                                    </svg>
+                                                </td>
+                                                <td class="au-table__cell view-cell  ">2003-11-30 22:32:44</td>
+                                                <td class="au-table__cell view-cell  ">2020-01-01 01:00:00</td>
+                                            </tr>
+                                            <tr class="au-table__row undefined" tabindex="0">
+                                                <td class="au-table__cell domain name-cell  "><a href="#">treasury.act.gov.au</a></td>
+                                                <td class="au-table__cell view-cell  ">1999-09-09 09:09:09</td>
+                                                <td class="au-table__cell view-cell  ">2019-10-11 12:23:34</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </main>
                     </div>
                 </div>
