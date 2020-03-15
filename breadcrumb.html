@@ -39,76 +39,91 @@
     <script charset="utf-8" src="./static/js/3.6b435b94.chunk.js"></script>
     <script charset="utf-8" src="./static/js/18.f1408925.chunk.js"></script>
 
-<style type="text/css">
-.au-main-nav a {
-    display: inline;
-}
-ul.au-link-list li {
-    margin-left: 0;
-}
-ul.au-link-list li.active > a {
-    font-weight: bold !important;
-}
-ul.au-link-list ul.au-link-list {
-    margin-left: 0.5em;
-    padding-left: 1em;
-    border-left: 1px dotted #aaa;
-}
-ul.au-link-list a {
-    text-decoration: none !important;
-}
-ul.au-link-list a:hover {
-    text-decoration: underline !important;
-}svg {
-    vertical-align: middle;
-}
-.au-body .dashboard h2 {
-    margin-bottom: 0.5em;
-    font-weight: normal;
-}
-#toolbar {
-    color: #fff;
-}
-#toolbar a {
-    color: #61daff; 
-    text-decoration: none;
-    padding: 0.75em 0.5em;
-}
-#toolbar a:hover {
-    color: #fff;
-    text-decoration: underline;
-    background-color: #343d4c;
-}
-#footer-nav a {
-    padding: 0 5px;
-}
-.au-breadcrumbs {
-    margin-bottom: 1em;
-}
-.au-breadcrumbs > .au-link-list > li {
-    margin: 0;
-}
-.au-breadcrumbs > .au-link-list > li:after {
-    content: ' ';
-    display: inline-block;
-    width: 0.5em;
-    height: 0.5em;
-    margin: 0 0.5em;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 128 128'%3E%3Cpath fill='gray' d='M128 64l-64 64-16-16 64-64'/%3E%3Cpath fill='gray' d='M128 64l-16 16-64-64L64 0'/%3E%3C/svg%3E");
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
+    <style type="text/css">
+        .au-main-nav a {
+            display: inline;
+        }
 
-.au-breadcrumbs > .au-link-list > li:last-child:after {
-    display: none;
-}
+        ul.au-link-list li {
+            margin-left: 0;
+        }
 
-.last-login {
-    color: #ddd;
-    font-size: 0.9em;
-    padding-right: 0.5em;
-}
-</style>
+        ul.au-link-list li.active>a {
+            font-weight: bold !important;
+        }
+
+        ul.au-link-list ul.au-link-list {
+            margin-left: 0.5em;
+            padding-left: 1em;
+            border-left: 1px dotted #aaa;
+        }
+
+        ul.au-link-list a {
+            text-decoration: none !important;
+        }
+
+        ul.au-link-list a:hover {
+            text-decoration: underline !important;
+        }
+
+        svg {
+            vertical-align: middle;
+        }
+
+        .au-body .dashboard h2 {
+            margin-bottom: 0.5em;
+            font-weight: normal;
+        }
+
+        #toolbar {
+            color: #fff;
+        }
+
+        #toolbar a {
+            color: #61daff;
+            text-decoration: none;
+            padding: 0.75em 0.5em;
+        }
+
+        #toolbar a:hover {
+            color: #fff;
+            text-decoration: underline;
+            background-color: #343d4c;
+        }
+
+        #footer-nav a {
+            padding: 0 5px;
+        }
+
+        .au-breadcrumbs {
+            margin-bottom: 1em;
+        }
+
+        .au-breadcrumbs>.au-link-list>li {
+            margin: 0;
+        }
+
+        .au-breadcrumbs>.au-link-list>li:after {
+            content: ' ';
+            display: inline-block;
+            width: 0.5em;
+            height: 0.5em;
+            margin: 0 0.5em;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 128 128'%3E%3Cpath fill='gray' d='M128 64l-64 64-16-16 64-64'/%3E%3Cpath fill='gray' d='M128 64l-16 16-64-64L64 0'/%3E%3C/svg%3E");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .au-breadcrumbs>.au-link-list>li:last-child:after {
+            display: none;
+        }
+
+        .last-login {
+            color: #ddd;
+            font-size: 0.9em;
+            padding-right: 0.5em;
+        }
+    </style>
 </head>
 
 <body cz-shortcut-listen="true"><noscript>You need to enable JavaScript to run this app.</noscript>
@@ -118,27 +133,38 @@ ul.au-link-list a:hover {
                 <div class="container">
                     <div class="col-md-6 dashboard-header__contents">
                         <a class="au-header__brand dashboard-header__link" href="index.html">
-                            <img src="./static/australian-government-white.png" alt="Australian Government" class="au-header__brand-image" style="min-height: 64px;">
+                            <img src="./static/australian-government-white.png" alt="Australian Government"
+                                class="au-header__brand-image" style="min-height: 64px;">
                             <h1 class="heading au-header__text">Project Ralph</h1>
                         </a>
                     </div>
                     <div class="col-md-6" style="text-align: right;">
                         <div id="toolbar">
                             <a href="#">
-                            <svg class="bi bi-person" width="32px" height="32px" viewBox="0 0 20 20" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle">
-                                <path fill-rule="evenodd" d="M15 16s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002zM5.022 15h9.956a.274.274 0 00.014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C13.516 12.68 12.289 12 10 12c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 00.022.004zm9.974.056v-.002zM10 9a2 2 0 100-4 2 2 0 000 4zm3-2a3 3 0 11-6 0 3 3 0 016 0z" clip-rule="evenodd"/>
-                            </svg> 
-                            John Denver    
+                                <svg class="bi bi-person" width="32px" height="32px" viewBox="0 0 20 20" fill="#ffffff"
+                                    xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle">
+                                    <path fill-rule="evenodd"
+                                        d="M15 16s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002zM5.022 15h9.956a.274.274 0 00.014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C13.516 12.68 12.289 12 10 12c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 00.022.004zm9.974.056v-.002zM10 9a2 2 0 100-4 2 2 0 000 4zm3-2a3 3 0 11-6 0 3 3 0 016 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                John Denver
                             </a>
-                            
+
                             <a href="#">
-                            <svg class="bi bi-box-arrow-right" width="32px" height="32px" viewBox="0 0 20 20" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
-                                <title>Log Out</title>
-                                <path fill-rule="evenodd" d="M13.646 13.354a.5.5 0 010-.708L16.293 10l-2.647-2.646a.5.5 0 01.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708 0z" clip-rule="evenodd"/>
-                                <path fill-rule="evenodd" d="M6.5 10a.5.5 0 01.5-.5h9a.5.5 0 010 1H7a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
-                                <path fill-rule="evenodd" d="M4 15.5A1.5 1.5 0 012.5 14V6A1.5 1.5 0 014 4.5h7A1.5 1.5 0 0112.5 6v1.5a.5.5 0 01-1 0V6a.5.5 0 00-.5-.5H4a.5.5 0 00-.5.5v8a.5.5 0 00.5.5h7a.5.5 0 00.5-.5v-1.5a.5.5 0 011 0V14a1.5 1.5 0 01-1.5 1.5H4z" clip-rule="evenodd"/>
-                            </svg>
-                            Logout
+                                <svg class="bi bi-box-arrow-right" width="32px" height="32px" viewBox="0 0 20 20"
+                                    fill="#ffffff" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+                                    <title>Log Out</title>
+                                    <path fill-rule="evenodd"
+                                        d="M13.646 13.354a.5.5 0 010-.708L16.293 10l-2.647-2.646a.5.5 0 01.708-.708l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708 0z"
+                                        clip-rule="evenodd" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 10a.5.5 0 01.5-.5h9a.5.5 0 010 1H7a.5.5 0 01-.5-.5z"
+                                        clip-rule="evenodd" />
+                                    <path fill-rule="evenodd"
+                                        d="M4 15.5A1.5 1.5 0 012.5 14V6A1.5 1.5 0 014 4.5h7A1.5 1.5 0 0112.5 6v1.5a.5.5 0 01-1 0V6a.5.5 0 00-.5-.5H4a.5.5 0 00-.5.5v8a.5.5 0 00.5.5h7a.5.5 0 00.5-.5v-1.5a.5.5 0 011 0V14a1.5 1.5 0 01-1.5 1.5H4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Logout
                             </a>
                             <br>
                             <span class="last-login">Last login 22 March 2020</span>
@@ -146,7 +172,8 @@ ul.au-link-list a:hover {
                     </div>
                 </div>
             </nav>
-            <nav class="au-main-nav  au-main-nav--dark dashboard-main-nav" aria-label="main" style="padding-bottom: 10px">
+            <nav class="au-main-nav  au-main-nav--dark dashboard-main-nav" aria-label="main"
+                style="padding-bottom: 10px">
                 <div class="container">
                 </div>
             </nav>
@@ -155,10 +182,11 @@ ul.au-link-list a:hover {
                     <div class="row">
                         <div class="col-md-12">
                             <div><span class="">Organisation: </span><select class="au-select organisation-select">
-                                <option value="efc5d22b-3eef-4399-b21e-09e369e8d354" selected="">Chief Minister, Treasury and Economic Development Directorate - Zone Admin</option>
-                                <option>Health Directorate - User</option>
-                                <option>Transport Canberra and City Services - Org Admin</option>
-                            </select></div>
+                                    <option value="efc5d22b-3eef-4399-b21e-09e369e8d354" selected="">Chief Minister,
+                                        Treasury and Economic Development Directorate - Zone Admin</option>
+                                    <option>Health Directorate - User</option>
+                                    <option>Transport Canberra and City Services - Org Admin</option>
+                                </select></div>
                         </div>
                     </div>
                 </div>
@@ -194,14 +222,108 @@ ul.au-link-list a:hover {
                                     <li><a href="#">Dashboard</a></li>
                                     <li><a href="#">My Organisation</a></li>
                                     <li><a href="#">Organisation History</a></li>
-                                    <li>Revision 1</li>
+                                    <li>Revision 4</li>
                                 </ul>
                             </nav>
 
                             <h1 class="au-display-xl heading">Organisation History</h1>
-                            <h2>Revision 1</h2>
+                            <h2>Revision 4</h2>
 
-                            <div><div class="au-card    "><div class="au-card__inner "><p>Organisation has been created with: Organisation(name=Chief Minister, Treasury and Economic Development Directorate, canonicalName=chief minister, treasury and economic development directorate, registrantName=Chief Minister, Treasury and Economic Development Directorate, canonicalRegistrantName=chief minister, treasury and economic development directorate, registrantContactName=Peter Bridgfoot, registrantContactEmail=peter.bridgfoot@act.gov.au, ownerUserId=e437d613-d415-4ddc-bfda-89ab46330dbc, phone=+61.262050267, street1=Shared Services ICT, street2=GPO Box 158, street3=null, city=Australian Capital Territory, postcode=2601, state=Australian Capital Territory, countryCode=AU, type=ZONE_MANAGER, zones=[], managedZones=[1b5b6301-9c4c-4f9e-9e00-f6fe0c6125fd], organisationRoles=[OrganisationRole(userId=e437d613-d415-4ddc-bfda-89ab46330dbc, role=ZONE_MANAGER_ADMIN), OrganisationRole(userId=e437d613-d415-4ddc-bfda-89ab46330dbc, role=ORGANISATION_USER), OrganisationRole(userId=2bb98164-46f2-47a0-9ddd-853dbeef7eb3, role=ORGANISATION_USER), OrganisationRole(userId=e437d613-d415-4ddc-bfda-89ab46330dbc, role=ORGANISATION_ADMIN), OrganisationRole(userId=2bb98164-46f2-47a0-9ddd-853dbeef7eb3, role=ZONE_MANAGER_ADMIN)], contacts=[OrganisationContact(name=Peter Bridgfoot, email=peter.bridgfoot@act.gov.au, type=TECHNICAL), OrganisationContact(name=Peter Bridgfoot, email=peter.bridgfoot@act.gov.au, type=ADMINISTRATIVE)])</p></div></div></div>
+                            <p>
+                            Revision type: MOD<br>
+                            Last modified: 2020-03-16T10:33:48+11:00
+                            </p>
+
+                            <table class="table__au-table au-table">
+                                <thead class="au-table__head ">
+                                    <tr class="au-table__row">
+                                        <th class="au-table__header">Property</th>
+                                        <th class="au-table__header" width="40%">Previous value</th>
+                                        <th class="au-table__header" width="40%">New value</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="au-table__body  ">
+                                    <tr class="au-table__row">
+                                        <td class="au-table__cell">name</td>
+                                        <td class="au-table__cell">Digital Transformation Agency - Registrar</td>
+                                        <td class="au-table__cell">Digital Transformation Agency - Registrar1</td>
+                                    </tr>
+                                    <tr class="au-table__row">
+                                        <td class="au-table__cell">canonicalName</td>
+                                        <td class="au-table__cell">digital transformation agency - registrar</td>
+                                        <td class="au-table__cell">digital transformation agency - registrar1</td>
+                                    </tr>
+                                    <tr class="au-table__row">
+                                        <td class="au-table__cell">registrantName</td>
+                                        <td class="au-table__cell">Digital Transformation Agency - Registrar</td>
+                                        <td class="au-table__cell">Digital Transformation Agency - Registrar1</td>
+                                    </tr>
+                                    <tr class="au-table__row">
+                                        <td class="au-table__cell">canonicalRegistrantName</td>
+                                        <td class="au-table__cell">digital transformation agency - registrar</td>
+                                        <td class="au-table__cell">digital transformation agency - registrar1</td>
+                                    </tr>
+                                    <tr class="au-table__row">
+                                        <td class="au-table__cell">registrantContactName</td>
+                                        <td class="au-table__cell">Gordon Grace</td>
+                                        <td class="au-table__cell">Gordon Grace1</td>
+                                    </tr>
+                                    <tr class="au-table__row">
+                                        <td class="au-table__cell">street2</td>
+                                        <td class="au-table__cell">null</td>
+                                        <td class="au-table__cell"></td>
+                                    </tr>
+                                    <tr class="au-table__row">
+                                        <td class="au-table__cell">street3</td>
+                                        <td class="au-table__cell">null</td>
+                                        <td class="au-table__cell"></td>
+                                    </tr>
+                                    <tr class="au-table__row">
+                                        <td class="au-table__cell">lastUpdateUserId</td>
+                                        <td class="au-table__cell">137a5557-e5e0-4bc3-b585-53062420aa68</td>
+                                        <td class="au-table__cell">d651cce5-df90-4fcf-bae8-0c0da820ce54</td>
+                                    </tr>
+                                    <tr class="au-table__row">
+                                        <td class="au-table__cell">lastUpdateTimestamp</td>
+                                        <td class="au-table__cell">2020-03-15T23:31:26.262928</td>
+                                        <td class="au-table__cell">2020-03-15T23:33:47.839179</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            
+
+                            <div style="margin-top: 10em;">
+                                <div class="au-card    ">
+                                    <div class="au-card__inner ">
+                                        <p>Organisation has been created with: Organisation(name=Chief Minister,
+                                            Treasury and Economic Development Directorate, canonicalName=chief minister,
+                                            treasury and economic development directorate, registrantName=Chief
+                                            Minister, Treasury and Economic Development Directorate,
+                                            canonicalRegistrantName=chief minister, treasury and economic development
+                                            directorate, registrantContactName=Peter Bridgfoot,
+                                            registrantContactEmail=peter.bridgfoot@act.gov.au,
+                                            ownerUserId=e437d613-d415-4ddc-bfda-89ab46330dbc, phone=+61.262050267,
+                                            street1=Shared Services ICT, street2=GPO Box 158, street3=null,
+                                            city=Australian Capital Territory, postcode=2601, state=Australian Capital
+                                            Territory, countryCode=AU, type=ZONE_MANAGER, zones=[],
+                                            managedZones=[1b5b6301-9c4c-4f9e-9e00-f6fe0c6125fd],
+                                            organisationRoles=[OrganisationRole(userId=e437d613-d415-4ddc-bfda-89ab46330dbc,
+                                            role=ZONE_MANAGER_ADMIN),
+                                            OrganisationRole(userId=e437d613-d415-4ddc-bfda-89ab46330dbc,
+                                            role=ORGANISATION_USER),
+                                            OrganisationRole(userId=2bb98164-46f2-47a0-9ddd-853dbeef7eb3,
+                                            role=ORGANISATION_USER),
+                                            OrganisationRole(userId=e437d613-d415-4ddc-bfda-89ab46330dbc,
+                                            role=ORGANISATION_ADMIN),
+                                            OrganisationRole(userId=2bb98164-46f2-47a0-9ddd-853dbeef7eb3,
+                                            role=ZONE_MANAGER_ADMIN)], contacts=[OrganisationContact(name=Peter
+                                            Bridgfoot, email=peter.bridgfoot@act.gov.au, type=TECHNICAL),
+                                            OrganisationContact(name=Peter Bridgfoot, email=peter.bridgfoot@act.gov.au,
+                                            type=ADMINISTRATIVE)])</p>
+                                    </div>
+                                </div>
+                            </div>
 
                         </main>
                     </div>
