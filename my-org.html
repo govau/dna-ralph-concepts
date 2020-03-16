@@ -204,7 +204,7 @@
                             <li><a href="#">My Profile</a></li>
                             <li class="active"><a href="#">My Organisation</a>
                                 <ul class="au-link-list">
-                                    <li class="active"><a href="#">Edit Organisation</a></li>
+                                    <li><a href="#">Edit Organisation</a></li>
                                     <li><a href="#">Manage Users</a></li>
                                     <li><a href="#">Organisation History</a></li>
                                 </ul>
@@ -225,12 +225,11 @@
                             <nav class="au-breadcrumbs" aria-label="breadcrumb">
                                 <ul class="au-link-list au-link-list--inline">
                                     <li><a href="#">Dashboard</a></li>
-                                    <li><a href="#">My Organisation</a></li>
-                                    <li>Edit Organisation</li>
+                                    <li>My Organisation</li>
                                 </ul>
                             </nav>
 
-                            <h1 class="au-display-xl heading">Edit Organisation</h1>
+                            <h1 class="au-display-xl heading">My Organisation</h1>
 
                             <div class="container-fluid">
                                 <div class="row">
@@ -255,56 +254,16 @@
                                     <p>Canberra 2601</p>
                                     <p>ACT Australia</p>
                                 </div>
-                                <div class="info-group"><label class="au-label ">Owner name</label>System User</div>
-                                <div class="info-group"><label class="au-label ">Owner email</label><a
-                                        href="mailto:sys@securityshift.com">sys@securityshift.com</a></div>
-                                <div class="info-group"><label class="au-label ">Created
-                                        on</label>2020-03-16T10:31:26+11:00</div>
-                                <div class="info-group"><label class="au-label ">Created by</label>System User <a
-                                        href="mailto:sys@securityshift.com">sys@securityshift.com</a></div>
-                                <div class="info-group"><label class="au-label ">Last update
-                                        on</label>2020-03-16T10:33:47+11:00</div>
-                                <div class="info-group"><label class="au-label ">Last updated by</label>Admin User
-                                    sysadmin@securityshift.com</div>
-                                <div class="info-group"><label class="au-label ">Contacts</label>
-                                    <table class="table__au-table au-table au-table--striped">
-                                        <thead class="au-table__head ">
-                                            <tr class="au-table__row undefined">
-                                                <th class="au-table__header undefined   "> Name </th>
-                                                <th class="au-table__header undefined   "> Email </th>
-                                                <th class="au-table__header undefined   "> Type </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="au-table__body  ">
-                                            <tr class="au-table__row undefined" tabindex="0">
-                                                <td class="au-table__cell name-cell  ">Matt Parry</td>
-                                                <td class="au-table__cell email-cell  "><a
-                                                        href="mailto:matt.parry@dta.gov.au">matt.parry@dta.gov.au</a>
-                                                </td>
-                                                <td class="au-table__cell type-cell  ">Technical</td>
-                                            </tr>
-                                            <tr class="au-table__row undefined" tabindex="0">
-                                                <td class="au-table__cell name-cell  ">Chris Erett</td>
-                                                <td class="au-table__cell email-cell  "><a
-                                                        href="mailto:chris.erett@dta.gov.au">chris.erett@dta.gov.au</a>
-                                                </td>
-                                                <td class="au-table__cell type-cell  ">Administrative</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="info-group"><label class="au-label ">Access zones</label></div>
-                                <div class="spaced spaced__top-none spaced__bottom-one"><button type="button"
-                                        class="au-btn  ">Edit</button></div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <p><strong>WHOIS preview</strong><br>
 <pre style="background-color: #f3f3f3; padding: 8px 16px; border-radius: 4px; font-size: 0.85em; white-space: pre-wrap; word-wrap: break-wrap; margin-top: 0;">
-Domain: &lt;example.gov.au&gt;
+Domain Name: &lt;example.gov.au&gt;
+Last Modified:
 Registrant Contact Name: Gordon Grace1
 Tech Contact Name: Matt Parry
-Registrant: Digital Transformation Agency (DTA)
+Registrant: Digital Transformation Agency1
 Eligibility Type: Government
 </pre></p>
 
@@ -313,6 +272,57 @@ Eligibility Type: Government
                     </div>
                 </div>
 
+
+                <div class="info-group"><label class="au-label ">Contacts</label>
+                    <table class="table__au-table au-table au-table--striped">
+                        <thead class="au-table__head ">
+                            <tr class="au-table__row undefined">
+                                <th class="au-table__header undefined   "> Name </th>
+                                <th class="au-table__header undefined   "> Email </th>
+                                <th class="au-table__header undefined   "> Type </th>
+                            </tr>
+                        </thead>
+                        <tbody class="au-table__body  ">
+                            <tr class="au-table__row undefined" tabindex="0">
+                                <td class="au-table__cell name-cell  ">Matt Parry</td>
+                                <td class="au-table__cell email-cell  "><a
+                                        href="mailto:matt.parry@dta.gov.au">matt.parry@dta.gov.au</a>
+                                </td>
+                                <td class="au-table__cell type-cell  ">Technical</td>
+                            </tr>
+                            <tr class="au-table__row undefined" tabindex="0">
+                                <td class="au-table__cell name-cell  ">Chris Erett</td>
+                                <td class="au-table__cell email-cell  "><a
+                                        href="mailto:chris.erett@dta.gov.au">chris.erett@dta.gov.au</a>
+                                </td>
+                                <td class="au-table__cell type-cell  ">Administrative</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <h2>Organisational Manager</h2>
+                <div class="info-group"><label class="au-label ">Name</label>System User</div>
+                <div class="info-group"><label class="au-label ">Email</label><a
+                        href="mailto:sys@securityshift.com">sys@securityshift.com</a></div>
+
+
+                <h2>Other</h2>
+                <div class="info-group"><label class="au-label ">Access zones</label></div>
+                <div class="info-group"><label class="au-label ">Created
+                    on</label>2020-03-16T10:31:26+11:00</div>
+            <div class="info-group"><label class="au-label ">Created by</label>System User <a
+                    href="mailto:sys@securityshift.com">sys@securityshift.com</a></div>
+            <div class="info-group"><label class="au-label ">Last update
+                    on</label>2020-03-16T10:33:47+11:00</div>
+            <div class="info-group"><label class="au-label ">Last updated by</label>Admin User
+                sysadmin@securityshift.com</div>
+                
+
+
+                <div class="spaced spaced__top-none spaced__bottom-one" style="margin-top: 5em;"><button type="button"
+                    class="au-btn  ">Edit</button></div>
 
                         </main>
                     </div>
