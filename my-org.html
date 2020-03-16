@@ -123,9 +123,11 @@
             font-size: 0.9em;
             padding-right: 0.5em;
         }
+
         span.diff-added {
             background-color: #cdffd8;
         }
+
         span.diff-removed {
             background-color: #ffdce0;
         }
@@ -188,10 +190,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div><span class="">Organisation: </span><select class="au-select organisation-select">
-                                    <option value="efc5d22b-3eef-4399-b21e-09e369e8d354" selected="">Chief Minister,
-                                        Treasury and Economic Development Directorate - Zone Admin</option>
-                                    <option>Health Directorate - User</option>
-                                    <option>Transport Canberra and City Services - Org Admin</option>
+                                    <option value="efc5d22b-3eef-4399-b21e-09e369e8d354" selected="">Digital Transformation Agency - Registrar1 - Zone Admin</option>
                                 </select></div>
                         </div>
                     </div>
@@ -205,9 +204,9 @@
                             <li><a href="#">My Profile</a></li>
                             <li class="active"><a href="#">My Organisation</a>
                                 <ul class="au-link-list">
-                                    <li><a href="#">Edit Organisation</a></li>
+                                    <li class="active"><a href="#">Edit Organisation</a></li>
                                     <li><a href="#">Manage Users</a></li>
-                                    <li class="active"><a href="#">Organisation History</a></li>
+                                    <li><a href="#">Organisation History</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -227,132 +226,93 @@
                                 <ul class="au-link-list au-link-list--inline">
                                     <li><a href="#">Dashboard</a></li>
                                     <li><a href="#">My Organisation</a></li>
-                                    <li><a href="#">Organisation History</a></li>
-                                    <li>Revision 4</li>
+                                    <li>Edit Organisation</li>
                                 </ul>
                             </nav>
 
-                            <h1 class="au-display-xl heading">Organisation History</h1>
-                            <h2>Revision 4</h2>
+                            <h1 class="au-display-xl heading">Edit Organisation</h1>
 
-                            <p>
-                                Revision type: MOD<br>
-                                Last modified: 2020-03-16T10:33:48+11:00
-                            </p>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
 
-                            <table class="table__au-table au-table">
-                                <thead class="au-table__head ">
-                                    <tr class="au-table__row">
-                                        <th class="au-table__header">Property</th>
-                                        <th class="au-table__header" width="40%">Previous value</th>
-                                        <th class="au-table__header" width="40%">New value</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="au-table__body  ">
-                                    <tr class="au-table__row">
-                                        <td class="au-table__cell">name</td>
-                                        <td class="au-table__cell">Digital Transformation Agency - Registrar</td>
-                                        <td class="au-table__cell">Digital Transformation Agency - Registrar<span class="diff-added">111</span></td>
-                                    </tr>
-                                    <tr class="au-table__row">
-                                        <td class="au-table__cell">canonicalName</td>
-                                        <td class="au-table__cell">digital transformation agency - registrar</td>
-                                        <td class="au-table__cell">digital transformation agency - registrar<span class="diff-added">111</span></td>
-                                    </tr>
-                                    <tr class="au-table__row">
-                                        <td class="au-table__cell">registrantName</td>
-                                        <td class="au-table__cell">Digital <span class="diff-removed">Transformation </span>Agency - Registrar</td>
-                                        <td class="au-table__cell">Digital Agency - Registrar<span class="diff-added">111</span></td>
-                                    </tr>
-                                    <tr class="au-table__row">
-                                        <td class="au-table__cell">canonicalRegistrantName</td>
-                                        <td class="au-table__cell">digital <span class="diff-removed">transformation </span>agency - registrar</td>
-                                        <td class="au-table__cell">digital agency - registrar<span class="diff-added">111</span></td>
-                                    </tr>
-                                    <tr class="au-table__row">
-                                        <td class="au-table__cell">registrantContactName</td>
-                                        <td class="au-table__cell">Gordon Grace</td>
-                                        <td class="au-table__cell">Gordon Grace<span class="diff-added">111</span></td>
-                                    </tr>
-                                    <tr class="au-table__row">
-                                        <td class="au-table__cell">street2</td>
-                                        <td class="au-table__cell">null</td>
-                                        <td class="au-table__cell"></td>
-                                    </tr>
-                                    <tr class="au-table__row">
-                                        <td class="au-table__cell">street3</td>
-                                        <td class="au-table__cell">null</td>
-                                        <td class="au-table__cell"></td>
-                                    </tr>
-                                    <tr class="au-table__row">
-                                        <td class="au-table__cell">lastUpdateUserId</td>
-                                        <td class="au-table__cell">137a5557-e5e0-4bc3-b585-53062420aa68</td>
-                                        <td class="au-table__cell">d651cce5-df90-4fcf-bae8-0c0da820ce54</td>
-                                    </tr>
-                                    <tr class="au-table__row">
-                                        <td class="au-table__cell">lastUpdateTimestamp</td>
-                                        <td class="au-table__cell">2020-03-15T23:31:26.262928</td>
-                                        <td class="au-table__cell">2020-03-15T23:33:47.839179</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-
-
-                            <div style="margin-top: 10em;">
-                                <div class="au-card    ">
-                                    <div class="au-card__inner ">
-                                        <p>'name' has changed from 'Digital Transformation Agency - Registrar' to
-                                            'Digital Transformation Agency - Registrar111'</p>
-                                    </div>
+                            <div>
+                                <div class="info-group"><label class="au-label ">Organisation name</label>Digital
+                                    Transformation Agency - Registrar1</div>
+                                <div class="info-group"><label class="au-label ">Registrant name</label>Digital
+                                    Transformation Agency1</div>
+                                <div class="info-group"><label class="au-label ">Registrant contact name</label>Gordon
+                                    Grace1</div>
+                                <div class="info-group"><label class="au-label ">Registrant contact email</label><a
+                                        href="mailto:gordon.grace@dta.gov.au">gordon.grace@dta.gov.au</a></div>
+                                <div class="info-group"><label class="au-label ">Organisation type</label>Registrar
                                 </div>
-                                <div class="au-card    ">
-                                    <div class="au-card__inner ">
-                                        <p>'canonicalName' has changed from 'digital transformation agency - registrar'
-                                            to 'digital transformation agency - registrar111'</p>
-                                    </div>
+                                <div class="info-group"><label class="au-label ">Phone</label>+61.299995555</div>
+                                <div class="info-group"><label class="au-label ">Address</label>
+                                    <p>25 Marcus Clark Street</p>
+                                    <p></p>
+                                    <p></p>
+                                    <p>Canberra 2601</p>
+                                    <p>ACT Australia</p>
                                 </div>
-                                <div class="au-card    ">
-                                    <div class="au-card__inner ">
-                                        <p>'registrantName' has changed from 'Digital Transformation Agency' to 'Digital
-                                            Agency111'</p>
-                                    </div>
+                                <div class="info-group"><label class="au-label ">Owner name</label>System User</div>
+                                <div class="info-group"><label class="au-label ">Owner email</label><a
+                                        href="mailto:sys@securityshift.com">sys@securityshift.com</a></div>
+                                <div class="info-group"><label class="au-label ">Created
+                                        on</label>2020-03-16T10:31:26+11:00</div>
+                                <div class="info-group"><label class="au-label ">Created by</label>System User <a
+                                        href="mailto:sys@securityshift.com">sys@securityshift.com</a></div>
+                                <div class="info-group"><label class="au-label ">Last update
+                                        on</label>2020-03-16T10:33:47+11:00</div>
+                                <div class="info-group"><label class="au-label ">Last updated by</label>Admin User
+                                    sysadmin@securityshift.com</div>
+                                <div class="info-group"><label class="au-label ">Contacts</label>
+                                    <table class="table__au-table au-table au-table--striped">
+                                        <thead class="au-table__head ">
+                                            <tr class="au-table__row undefined">
+                                                <th class="au-table__header undefined   "> Name </th>
+                                                <th class="au-table__header undefined   "> Email </th>
+                                                <th class="au-table__header undefined   "> Type </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="au-table__body  ">
+                                            <tr class="au-table__row undefined" tabindex="0">
+                                                <td class="au-table__cell name-cell  ">Matt Parry</td>
+                                                <td class="au-table__cell email-cell  "><a
+                                                        href="mailto:matt.parry@dta.gov.au">matt.parry@dta.gov.au</a>
+                                                </td>
+                                                <td class="au-table__cell type-cell  ">Technical</td>
+                                            </tr>
+                                            <tr class="au-table__row undefined" tabindex="0">
+                                                <td class="au-table__cell name-cell  ">Chris Erett</td>
+                                                <td class="au-table__cell email-cell  "><a
+                                                        href="mailto:chris.erett@dta.gov.au">chris.erett@dta.gov.au</a>
+                                                </td>
+                                                <td class="au-table__cell type-cell  ">Administrative</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="au-card    ">
-                                    <div class="au-card__inner ">
-                                        <p>'canonicalRegistrantName' has changed from 'digital transformation agency' to
-                                            'digital agency111'</p>
-                                    </div>
-                                </div>
-                                <div class="au-card    ">
-                                    <div class="au-card__inner ">
-                                        <p>'registrantContactName' has changed from 'Gordon Grace' to 'Gordon Grace111'
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="au-card    ">
-                                    <div class="au-card__inner ">
-                                        <p>'street2' has changed from 'null' to ''</p>
-                                    </div>
-                                </div>
-                                <div class="au-card    ">
-                                    <div class="au-card__inner ">
-                                        <p>'street3' has changed from 'null' to ''</p>
-                                    </div>
-                                </div>
-                                <div class="au-card    ">
-                                    <div class="au-card__inner ">
-                                        <p>'lastUpdateUserId' has changed from '137a5557-e5e0-4bc3-b585-53062420aa68' to
-                                            'd651cce5-df90-4fcf-bae8-0c0da820ce54'</p>
-                                    </div>
-                                </div>
-                                <div class="au-card    ">
-                                    <div class="au-card__inner ">
-                                        <p>'lastUpdateTimestamp' has changed from '2020-03-15T23:31:26.262928' to
-                                            '2020-03-15T23:33:47.839179'</p>
-                                    </div>
-                                </div>
+                                <div class="info-group"><label class="au-label ">Access zones</label></div>
+                                <div class="spaced spaced__top-none spaced__bottom-one"><button type="button"
+                                        class="au-btn  ">Edit</button></div>
                             </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>WHOIS preview</strong><br>
+<pre style="background-color: #f3f3f3; padding: 8px 16px; border-radius: 4px; font-size: 0.85em; white-space: pre-wrap; word-wrap: break-wrap; margin-top: 0;">
+Domain: &lt;example.gov.au&gt;
+Registrant Contact Name: Gordon Grace1
+Tech Contact Name: Matt Parry
+Registrant: Digital Transformation Agency (DTA)
+Eligibility Type: Government
+</pre></p>
+
+
+                        </div>
+                    </div>
+                </div>
+
 
                         </main>
                     </div>
