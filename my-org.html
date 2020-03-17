@@ -131,6 +131,10 @@
         span.diff-removed {
             background-color: #ffdce0;
         }
+
+        .eye {
+            vertical-align: middle;
+        }
     </style>
 </head>
 
@@ -238,12 +242,8 @@
                             <div>
                                 <div class="info-group"><label class="au-label ">Organisation name</label>Digital
                                     Transformation Agency - Registrar1</div>
-                                <div class="info-group"><label class="au-label ">Registrant name</label>Digital
+                                <div class="info-group"><label class="au-label ">Registrant name <img class="eye" src="static/icons/eye.svg" width="16" height="16" title="Viewable on WHOIS queries"></label>Digital
                                     Transformation Agency1</div>
-                                <div class="info-group"><label class="au-label ">Registrant contact name</label>Gordon
-                                    Grace1</div>
-                                <div class="info-group"><label class="au-label ">Registrant contact email</label><a
-                                        href="mailto:gordon.grace@dta.gov.au">gordon.grace@dta.gov.au</a></div>
                                 <div class="info-group"><label class="au-label ">Organisation type</label>Registrar
                                 </div>
                                 <div class="info-group"><label class="au-label ">Phone</label>+61.299995555</div>
@@ -257,12 +257,13 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <p><strong>WHOIS preview</strong><br>
+                            <p><strong>Organisation data displayed in WHOIS</strong><br>
 <pre style="background-color: #f3f3f3; padding: 8px 16px; border-radius: 4px; font-size: 0.85em; white-space: pre-wrap; word-wrap: break-wrap; margin-top: 0;">
 Domain Name: &lt;example.gov.au&gt;
-Last Modified:
-Registrant Contact Name: Gordon Grace1
-Tech Contact Name: Matt Parry
+Registrant Contact Name: Web Manager
+Registrant Content Email: web-manager@dta.gov.au
+Tech Contact Name: Tech Manager
+Tech Contact Email: tech-manager@dta.gov.au
 Registrant: Digital Transformation Agency1
 Eligibility Type: Government Body
 </pre></p>
@@ -272,41 +273,46 @@ Eligibility Type: Government Body
                     </div>
                 </div>
 
+                <h2>Organisational Manager</h2>
+                <div class="info-group"><label class="au-label ">Name</label>Sarah Knowles</div>
+                <div class="info-group"><label class="au-label ">Email</label><a
+                        href="mailto:sys@securityshift.com">sarah-knowles@dta.gov.au</a></div>
 
-                <div class="info-group"><label class="au-label ">Contacts</label>
+                <h2>Domain Contacts</h2>
+                <div class="info-group">
                     <table class="table__au-table au-table au-table--striped">
                         <thead class="au-table__head ">
                             <tr class="au-table__row undefined">
+                                <th class="au-table__header undefined   "> Type </th>
                                 <th class="au-table__header undefined   "> Name </th>
                                 <th class="au-table__header undefined   "> Email </th>
-                                <th class="au-table__header undefined   "> Type </th>
                             </tr>
                         </thead>
                         <tbody class="au-table__body  ">
                             <tr class="au-table__row undefined" tabindex="0">
-                                <td class="au-table__cell name-cell  ">Matt Parry</td>
+                                <td class="au-table__cell type-cell  ">Registrant <img class="eye" src="static/icons/eye.svg" width="16" height="16" title="Viewable on WHOIS queries"></td>
+                                <td class="au-table__cell name-cell  ">Web Manager</td>
                                 <td class="au-table__cell email-cell  "><a
-                                        href="mailto:matt.parry@dta.gov.au">matt.parry@dta.gov.au</a>
+                                        href="#">web-manager@dta.gov.au</a>
                                 </td>
-                                <td class="au-table__cell type-cell  ">Technical</td>
                             </tr>
                             <tr class="au-table__row undefined" tabindex="0">
-                                <td class="au-table__cell name-cell  ">Chris Erett</td>
+                                <td class="au-table__cell type-cell  ">Technical <img class="eye" src="static/icons/eye.svg" width="16" height="16" title="Viewable on WHOIS queries"></td>
+                                <td class="au-table__cell name-cell  ">Tech Manager</td>
                                 <td class="au-table__cell email-cell  "><a
-                                        href="mailto:chris.erett@dta.gov.au">chris.erett@dta.gov.au</a>
+                                        href="#">tech-team@dta.gov.au</a>
                                 </td>
+                            </tr>
+                            <tr class="au-table__row undefined" tabindex="0">
                                 <td class="au-table__cell type-cell  ">Administrative</td>
+                                <td class="au-table__cell name-cell  ">IT Security Advisor</td>
+                                <td class="au-table__cell email-cell  "><a
+                                        href="#">itsa@dta.gov.au</a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
-
-                <h2>Organisational Manager</h2>
-                <div class="info-group"><label class="au-label ">Name</label>System User</div>
-                <div class="info-group"><label class="au-label ">Email</label><a
-                        href="mailto:sys@securityshift.com">sys@securityshift.com</a></div>
-
 
                 <h2>Other</h2>
                 <div class="info-group"><label class="au-label ">Access zones</label></div>
@@ -324,11 +330,17 @@ Eligibility Type: Government Body
                 <div class="spaced spaced__top-none spaced__bottom-one" style="margin-top: 5em;"><button type="button"
                     class="au-btn  ">Edit</button></div>
 
+
+
+
+
+                            <p style="margin-top: 5em;"><img class="eye" src="static/icons/eye.svg" width="16" height="16" title="Viewable on WHOIS queries"> denotes a field that is publically visible in WHOIS queries</p>
                         </main>
                     </div>
                 </div>
+
             </div>
-            <footer class="au-footer footer au-footer--dark " style="margin-top: 5em;" role="contentinfo">
+            <footer class="au-footer footer au-footer--dark " style="margin-top: 2em;" role="contentinfo">
                 <div class="container">
                     <nav class="au-footer__navigation au-body au-body--dark" aria-label="footer">
                         <div>
